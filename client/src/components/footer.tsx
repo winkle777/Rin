@@ -48,8 +48,11 @@ function Footer() {
             </Helmet>
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show">
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
+                {/* 添加新的段落，用于显示你的文字 */}
+                <p className="text-xl text-gray-400 text-center font-['Dancing_Script']">
+                    她仍可爱如光 是我不敢惊扰的梦……💕
+                </p>
                 <p className='text-sm text-neutral-500 font-normal link-line'>
-                    <span>她仍可爱如光 是我不敢惊扰的梦……💕 </span><br />
                     <span onDoubleClick={() => {
                         if(doubleClickTimes >= 2){ // actually need 3 times doubleClick
                             setDoubleClickTimes(0)
