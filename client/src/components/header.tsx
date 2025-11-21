@@ -27,7 +27,7 @@ export function Header({ children }: { children?: React.ReactNode }) {
                                 className="hidden opacity-0 md:opacity-100 duration-300 mr-auto md:flex flex-row items-center">
                                 <img src={process.env.AVATAR} alt="Avatar" className="w-12 h-12 rounded-2xl border-2" />
                                 <div className="flex flex-col justify-center items-start mx-4">
-                                    <p className="font-['Dancing_Script'] text-3xl text-[#deafd6]">
+                                    <p className="font-['Dancing_Script'] text-3xl text-[#deafd6] dark:text-[#deceb5]">
                                         {process.env.NAME}
                                     </p>
                                     <p className="text-xs text-neutral-500">
@@ -44,7 +44,7 @@ export function Header({ children }: { children?: React.ReactNode }) {
                                         <img src={process.env.AVATAR} alt="Avatar"
                                             className="w-10 h-10 rounded-full border-2" />
                                         <div className="flex flex-col justify-center items-start mx-2">
-                                            <p className="font-['Dancing_Script'] text-xl text-[#deafd6]">
+                                            <p className="font-['Dancing_Script'] text-xl text-[#deafd6] dark:text-[#deceb5]">
                                                 {process.env.NAME}
                                             </p>
                                             <p className="text-xs text-neutral-500">
