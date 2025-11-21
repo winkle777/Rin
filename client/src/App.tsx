@@ -200,7 +200,7 @@ function RouteMe({ path, children, headerComponent, paddingClassName, requirePer
     {params => {
       return (
         // 关键修改：添加了这个 div 并应用了类名
-        <div className="bg-custom-hero bg-contain bg-center w-full min-h-screen">
+        <div className="bg-custom-hero bg-cover bg-center w-full min-h-screen">
           <Header>
             {headerComponent}
           </Header>
