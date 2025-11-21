@@ -23,7 +23,7 @@ export default {
         'spacing': 'margin, padding',
       },
       backgroundImage: {
-        'custom-bg': "url('https://blog-image.haruhi.qzz.io/images/G3c9HGGXMAExmVd.jpg')", // 添加自定义背景图
+        'custom-bg': "url('https://blog-image.haruhi.qzz.io/images/G3c9HGGXMAExmVd.jpg')", // 直接在extend后添加背景图
       },
     },
   },
