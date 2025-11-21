@@ -18,7 +18,7 @@ export default {
         'dark': "#333333"
       },
       backgroundImage: { // 添加自定义背景图片
-        'custom-hero': "url('https://blog-image.haruhi.qzz.io/images/G5qse7RacAAAHBL.jpg')",
+        'custom-hero': "url('https://blog-image.haruhi.qzz.io/images/112350855.png')",
         // 你可以在这里添加更多自定义背景
       },
       transitionProperty: {
