@@ -21,11 +21,13 @@ export default {
         'height': 'height',
         'width': 'width',
         'spacing': 'margin, padding',
-      }
+      },
+      backgroundImage: {
+        'custom-bg': "url('https://blog-image.haruhi.qzz.io/images/G3c9HGGXMAExmVd.jpg')", // 添加自定义背景图
+      },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
 }
-
