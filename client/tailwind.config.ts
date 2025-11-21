@@ -13,7 +13,7 @@ export default {
         'theme-active': '#972038',
         'background': {
           'light': '#f5f5f5',
-          'dark': '#1c1c1e',
+          'dark': '#cbb7f2',
         },
         'dark': "#333333"
       },
