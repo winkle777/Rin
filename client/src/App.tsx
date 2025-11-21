@@ -196,9 +196,9 @@ function RouteMe({ path, children, headerComponent, paddingClassName, requirePer
       children = <ErrorPage error={t('error.permission_denied')} />;
   }
   return (
-    <Route path={path} >
-      {params => {
-        return (
+  <Route path={path} >
+    {params => {
+      return (
         // 关键修改：添加了这个 div 并应用了类名
         <div className="bg-custom-hero bg-cover bg-center w-full min-h-screen">
           <Header>
@@ -208,10 +208,11 @@ function RouteMe({ path, children, headerComponent, paddingClassName, requirePer
             {typeof children === 'function' ? children(params) : children}
           </Padding>
           <Footer />
-        </>)
-      }}
-    </Route>
-  )
+        </div>
+      )
+    }}
+  </Route>
+)
 }
 
 
