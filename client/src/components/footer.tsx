@@ -49,7 +49,7 @@ function Footer() {
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show">
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
                 <p className='text-sm text-neutral-500 font-normal link-line'>
-                    <span>她仍可爱如光 是我不敢惊扰的梦……💕 </span>  
+                    <span>她仍可爱如光 是我不敢惊扰的梦……💕 </span><br />
                     <span onDoubleClick={() => {
                         if(doubleClickTimes >= 2){ // actually need 3 times doubleClick
                             setDoubleClickTimes(0)
