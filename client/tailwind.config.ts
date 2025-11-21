@@ -1,35 +1,34 @@
-import { defineConfig } from 'tailwindcss';
-import type { Config } from 'tailwindcss';
-
-export default defineConfig({
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
-    "./index.html",  // 页面文件
-    "./src/**/*.{js,ts,jsx,tsx}",  // 搜索路径，Tailwind 将扫描这些文件
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: ['selector', '[data-color-mode="dark"]'],  // 支持的黑暗模式设置
+  darkMode: ['selector','[data-color-mode="dark"]'],
   theme: {
     extend: {
       colors: {
-        'theme': '#fc466b',  // 自定义颜色
-        'theme-hover': '#b13049',  // 自定义 hover 颜色
-        'theme-active': '#972038',  // 自定义 active 颜色
+        'theme': '#fc466b',
+        'theme-hover': '#b13049',
+        'theme-active': '#972038',
         'background': {
-          'light': '#f5f5f5',  // 自定义背景色（浅色）
-          'dark': '#1c1c1e',  // 自定义背景色（深色）
+          'light': '#f5f5f5',
+          'dark': '#1c1c1e',
         },
-        'dark': "#333333",  // 深色的标准颜色
+        'dark': "#333333"
+      },
+      backgroundImage: { // 添加自定义背景图片
+        'custom-hero': "url('https://blog-image.haruhi.qzz.io/images/G3c9HGGXMAExmVd.jpg')",
+        // 你可以在这里添加更多自定义背景
       },
       transitionProperty: {
-        'height': 'height',  // 允许在 Tailwind 中使用高度的过渡
-        'width': 'width',  // 允许在 Tailwind 中使用宽度的过渡
-        'spacing': 'margin, padding',  // 允许在 Tailwind 中使用 margin 和 padding 的过渡
-      },
-      backgroundImage: {
-        'custom-bg': "url('https://blog-image.haruhi.qzz.io/images/G3c9HGGXMAExmVd.jpg')",  // 设置自定义背景图
-      },
+        'height': 'height',
+        'width': 'width',
+        'spacing': 'margin, padding',
+      }
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),  // 添加 Typography 插件来优化文本内容样式
+    require('@tailwindcss/typography'),
   ],
-});
+}
