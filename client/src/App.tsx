@@ -75,7 +75,7 @@ function App() {
     ref.current = true
   }, [])
   //const favicon = `${process.env.API_URL}/favicon`;
-  const favicon = 'https://blog-image.haruhi.qzz.io/images/originFavicon.jpg';
+  const favicon = 'https://blog-r2.haruhi.qzz.io/images/%E5%A4%B4%E5%83%8F(haruhi.)1.jpg';
   return (
     <>
       <ClientConfigContext.Provider value={config}>
